@@ -1,0 +1,60 @@
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\bin\Debug\ThirdDay.exe.config
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\bin\Debug\ThirdDay.exe
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\bin\Debug\ThirdDay.pdb
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\bin\Debug\EntityFramework.dll
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\bin\Debug\EntityFramework.xml
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\ThirdDay.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\MainWindow.g.cs
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewEmployeeWindow.g.cs
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\App.g.cs
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\ThirdDay_Content.g.cs
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\ThirdDay_MarkupCompile.cache
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\ThirdDay_MarkupCompile.lref
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\App.baml
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\MainWindow.baml
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewEmployeeWindow.baml
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\ThirdDay.g.resources
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\ThirdDay.Properties.Resources.resources
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\ThirdDay.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\ThirdDay.exe
+c:\users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\ThirdDay.pdb
+C:\Users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewProjectWindow.g.cs
+C:\Users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewProjectWindow.baml
+C:\Users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewCostumerWindow.g.cs
+C:\Users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewCostumerWindow.baml
+C:\Users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\Windows\BindingEmployeesToProjectWindow.g.cs
+C:\Users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\Windows\BindingEmployeesToProjectWindow.baml
+C:\Users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\Windows\EndProjectWindow.g.cs
+C:\Users\user\documents\visual studio 2015\Projects\ThirdDay\ThirdDay\obj\Debug\Windows\EndProjectWindow.baml
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\bin\Debug\ThirdDay.exe.config
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\ThirdDay.exe
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\ThirdDay.pdb
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\bin\Debug\ThirdDay.exe
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\bin\Debug\ThirdDay.pdb
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\ThirdDay.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\MainWindow.g.cs
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewCostumerWindow.g.cs
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewEmployeeWindow.g.cs
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewProjectWindow.g.cs
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\Windows\BindingEmployeesToProjectWindow.g.cs
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\Windows\EndProjectWindow.g.cs
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\App.g.cs
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\ThirdDay_Content.g.cs
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\ThirdDay_MarkupCompile.cache
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\ThirdDay_MarkupCompile.lref
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\App.baml
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\MainWindow.baml
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewCostumerWindow.baml
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewEmployeeWindow.baml
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\Windows\AddNewProjectWindow.baml
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\Windows\BindingEmployeesToProjectWindow.baml
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\Windows\EndProjectWindow.baml
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\ThirdDay.g.resources
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\ThirdDay.Properties.Resources.resources
+C:\Users\user\Documents\GitHub\Daily-Tasks-Third-Day\ThirdDay\ThirdDay\obj\Debug\ThirdDay.csproj.GenerateResource.Cache

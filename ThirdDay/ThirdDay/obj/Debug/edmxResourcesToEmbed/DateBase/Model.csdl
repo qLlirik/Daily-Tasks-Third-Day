@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Costumers" EntityType="Model.Costumers" />
+    <EntitySet Name="Districts" EntityType="Model.Districts" />
+    <EntitySet Name="Employees" EntityType="Model.Employees" />
+    <EntitySet Name="EmployeesInProject" EntityType="Model.EmployeesInProject" />
+    <EntitySet Name="Languages" EntityType="Model.Languages" />
+    <EntitySet Name="Projects" EntityType="Model.Projects" />
+    <EntitySet Name="sysdiagrams" EntityType="Model.sysdiagrams" />
+    <AssociationSet Name="FK_Projects_Costumers" Association="Model.FK_Projects_Costumers">
+      <End Role="Costumers" EntitySet="Costumers" />
+      <End Role="Projects" EntitySet="Projects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employees_Districts" Association="Model.FK_Employees_Districts">
+      <End Role="Districts" EntitySet="Districts" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employees_Languages" Association="Model.FK_Employees_Languages">
+      <End Role="Languages" EntitySet="Languages" />
+      <End Role="Employees" EntitySet="Employees" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeesInProject_Employees" Association="Model.FK_EmployeesInProject_Employees">
+      <End Role="Employees" EntitySet="Employees" />
+      <End Role="EmployeesInProject" EntitySet="EmployeesInProject" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EmployeesInProject_Projects" Association="Model.FK_EmployeesInProject_Projects">
+      <End Role="Projects" EntitySet="Projects" />
+      <End Role="EmployeesInProject" EntitySet="EmployeesInProject" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Costumers">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Bank" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Account" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="INN" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="FioWorker" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="PhoneWorker" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Projects" Relationship="Model.FK_Projects_Costumers" FromRole="Costumers" ToRole="Projects" />
+  </EntityType>
+  <EntityType Name="Districts">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Employees" Relationship="Model.FK_Employees_Districts" FromRole="Districts" ToRole="Employees" />
+  </EntityType>
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="DistrictID" Type="Int32" Nullable="false" />
+    <Property Name="Experience" Type="Byte" Nullable="false" />
+    <Property Name="Year" Type="Int16" Nullable="false" />
+    <Property Name="LanguageID" Type="Int32" Nullable="false" />
+    <Property Name="Base" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Comment" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Salary" Type="Decimal" Nullable="false" Precision="15" Scale="0" />
+    <Property Name="Bonus" Type="Decimal" Nullable="false" Precision="15" Scale="0" />
+    <Property Name="GrossSalary" Type="Decimal" Nullable="false" Precision="15" Scale="0" />
+    <Property Name="Exempt" Type="Decimal" Nullable="false" Precision="15" Scale="0" />
+    <Property Name="Picture" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Districts" Relationship="Model.FK_Employees_Districts" FromRole="Employees" ToRole="Districts" />
+    <NavigationProperty Name="Languages" Relationship="Model.FK_Employees_Languages" FromRole="Employees" ToRole="Languages" />
+    <NavigationProperty Name="EmployeesInProject" Relationship="Model.FK_EmployeesInProject_Employees" FromRole="Employees" ToRole="EmployeesInProject" />
+  </EntityType>
+  <EntityType Name="EmployeesInProject">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjectID" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+    <Property Name="EmployeeStart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EmployeeStop" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="Employees" Relationship="Model.FK_EmployeesInProject_Employees" FromRole="EmployeesInProject" ToRole="Employees" />
+    <NavigationProperty Name="Projects" Relationship="Model.FK_EmployeesInProject_Projects" FromRole="EmployeesInProject" ToRole="Projects" />
+  </EntityType>
+  <EntityType Name="Languages">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Employees" Relationship="Model.FK_Employees_Languages" FromRole="Languages" ToRole="Employees" />
+  </EntityType>
+  <EntityType Name="Projects">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Start" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Stop" Type="DateTime" Precision="3" />
+    <Property Name="CheifID" Type="Int32" Nullable="false" />
+    <Property Name="Cost" Type="Decimal" Nullable="false" Precision="15" Scale="0" />
+    <Property Name="BonusAll" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Costumers" Relationship="Model.FK_Projects_Costumers" FromRole="Projects" ToRole="Costumers" />
+    <NavigationProperty Name="EmployeesInProject" Relationship="Model.FK_EmployeesInProject_Projects" FromRole="Projects" ToRole="EmployeesInProject" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Projects_Costumers">
+    <End Type="Model.Costumers" Role="Costumers" Multiplicity="1" />
+    <End Type="Model.Projects" Role="Projects" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Costumers">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Projects">
+        <PropertyRef Name="CheifID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employees_Districts">
+    <End Type="Model.Districts" Role="Districts" Multiplicity="1" />
+    <End Type="Model.Employees" Role="Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Districts">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="DistrictID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employees_Languages">
+    <End Type="Model.Languages" Role="Languages" Multiplicity="1" />
+    <End Type="Model.Employees" Role="Employees" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Languages">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Employees">
+        <PropertyRef Name="LanguageID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeesInProject_Employees">
+    <End Type="Model.Employees" Role="Employees" Multiplicity="1" />
+    <End Type="Model.EmployeesInProject" Role="EmployeesInProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employees">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="EmployeesInProject">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EmployeesInProject_Projects">
+    <End Type="Model.Projects" Role="Projects" Multiplicity="1" />
+    <End Type="Model.EmployeesInProject" Role="EmployeesInProject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Projects">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="EmployeesInProject">
+        <PropertyRef Name="ProjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
